@@ -5,7 +5,6 @@ largest = 0
 for(i = 2; i < upToANum; i++) {
     prime = true
     if(arbitrary % i == 0) {
-        arbitrary %= i
         for(j = 2; j < Math.sqrt(i); j ++){
             if(i % j == 0) {
                 prime = false
