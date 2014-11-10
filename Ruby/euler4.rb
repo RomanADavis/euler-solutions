@@ -1,9 +1,7 @@
 largest = 0
 (900..999).each do |i|
   (900..999).each do |j|
-    if (i * j).to_s == (i * j).to_s.reverse
-      largest = i * j
-    end
+    p largest = i * j if (i * j).to_s == (i * j).to_s.reverse
   end
 end
 
