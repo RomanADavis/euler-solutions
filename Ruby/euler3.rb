@@ -24,6 +24,4 @@ def largest_factor(n=600851475143, largest=1, plus_one=3)
   largest, n = plus_one, (n / plus_one) if (n % plus_one == 0) && prime_rec?(plus_one)
   largest_factor(n, largest, plus_one + 2)
 end 
-
-
 p largest_factor
