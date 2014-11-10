@@ -10,4 +10,13 @@ product = 1
     i += 1
   end
 end
-puts product
+p product
+
+# Does the above, except with recursion!
+def smallest_factor num=2, product=1, i=1
+  return product if num > 20
+  product * i % num == 0 ? (num, product, i = num + 1, product * i, 1) : i += 1
+  smallest_factor(num, product, i)
+end
+
+p smallest_factor

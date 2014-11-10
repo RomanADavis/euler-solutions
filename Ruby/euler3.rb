@@ -11,7 +11,6 @@ largest = 1
 end
 puts largest
 
-
 # Does the same thing as prime? except recursively
 def prime_rec? candidate, top=Math.sqrt(candidate).floor
   return true if top == 1
