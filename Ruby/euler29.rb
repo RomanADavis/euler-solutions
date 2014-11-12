@@ -1,5 +1,5 @@
 # euler29.rb
-# easy peasy. Tad slow, though. And I'm sure there's a more elegant way to do
+# Easy peasy. Tad slow, though. And I'm sure there's a more elegant way to do
 # this.
 a = []
 (2..100).each do |i|
