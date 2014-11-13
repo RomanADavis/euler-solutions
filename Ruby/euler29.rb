@@ -4,7 +4,7 @@
 a = []
 (2..100).each do |i|
   (2..100).each do |j|
-     a << (i ** j)
+     a << (i**j)
   end
   a = a.uniq
 end

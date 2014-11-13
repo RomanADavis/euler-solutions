@@ -5,5 +5,5 @@ def sum_of_fifth n
   n.to_s.split("").map! {|i| (i.to_i)**5}.inject(:+)
 end
 total = 0
-(10..1e6).each {|num| total += num if num == sum_of_fifth(num)}
+(10..(9**5 * 6)).each {|num| total += num if num == sum_of_fifth(num)}
 p total

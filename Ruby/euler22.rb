@@ -9,5 +9,6 @@ names.each_with_index do |name, i|
     ("A".."Z").each_with_index {|alpha, index| count += (index + 1) * (i + 1) if alpha == letter}
   end
 end
-
+"S","K","Y".each do |letter|
+  ("A".."Z").each_with_index {|alpha, index| count += (index + 1) * (i + 1) if alpha == letter}
 p count
