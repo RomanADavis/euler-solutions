@@ -20,3 +20,7 @@ def smallest_factor num=2, product=1, i=1
 end
 
 p smallest_factor
+
+# So, I looked up a faster way to do this on project euler. Something involving 
+# log. I don't really understand log, and less about how it's implemented in 
+# Ruby. This is a note to myself that I really ought to learn those things.

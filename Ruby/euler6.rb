@@ -25,3 +25,22 @@ def combined_method n=100, sum=0, square=0
 end
 
 p combined_method
+
+# The above solution is really dumb. To get the sum, all you need is to square 
+# equation for the triangle number formula. (n * (n + 1) / 2)**2, where n is 
+# 100.
+
+def square_sum_up_to n=100
+  (n * (n + 1) / 2)**2
+end
+
+# The triangle number formula is pretty easy, actually, to derive from that add
+# all the numbers up to 100 trick you probably learned as a kid. But can you do
+# the same with sum of squares? Yes, but it requires a lot more alqebra. The
+# equations, though, is simply (2n + 1) * (n + 1) * n / 6.
+
+def sum_up_to_squared n=100
+  (2 * n + 1) * (n + 1) * n / 6
+end
+
+p square_sum_up_to - sum_up_to_squared
