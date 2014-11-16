@@ -36,7 +36,7 @@ end
 
 # The triangle number formula is pretty easy, actually, to derive from that add
 # all the numbers up to 100 trick you probably learned as a kid. But can you do
-# the same with sum of squares? Yes, but it requires a lot more alqebra. The
+# the same with sum of squares? Yes, but it requires a lot more algebra. The
 # equations, though, is simply (2n + 1) * (n + 1) * n / 6.
 
 def sum_up_to_squared n=100
@@ -44,3 +44,4 @@ def sum_up_to_squared n=100
 end
 
 p square_sum_up_to - sum_up_to_squared
+# Way faster than asking Ruby to go through all those loops, I bet.
